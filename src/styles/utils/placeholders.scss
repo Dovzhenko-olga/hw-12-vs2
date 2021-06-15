@@ -1,0 +1,45 @@
+%flex {
+    display: flex;
+}
+
+%block {
+    display: block;
+}
+
+%center {
+    justify-content: center;
+    align-items: center;
+}
+
+%border {
+    white-space: nowrap;
+    display: block;
+    @extend %radius;
+}
+
+%border-radius {
+    color: var(--input-color);
+    border: 2px solid var(--input-border);
+    background: var(--input-background);
+    transition: border 0.3s ease;
+}
+
+%radius {
+    border-radius: 6px;
+}
+
+%relative {
+    position: relative;
+}
+
+%width {
+    width: 100%;
+}
+
+%padding {
+    padding: 8px 16px;
+}
+
+%padding-left {
+    padding: 8px 16px;
+}

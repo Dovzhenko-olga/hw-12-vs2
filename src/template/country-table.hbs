@@ -1,0 +1,31 @@
+<table>
+    <caption>
+        <h2>{{name}}</h2>
+    </caption>
+
+    <tr>
+        <td>
+            <h3>Capital:</h3>
+        </td>
+        <td>{{capital}}</td>
+        <td rowspan="5"><img src="{{flag}}" alt="flag of {{name}}" width="200" height="200"></td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Population:</h3>
+        </td>
+        <td>{{population}}</td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Languages:</h3>
+        </td>
+        <td>
+            <ul>
+                {{#each languages}}
+                <li>{{this.name}}</li>
+                {{/each}}
+            </ul>
+        </td>
+    </tr>
+</table>

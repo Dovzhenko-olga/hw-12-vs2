@@ -1,0 +1,21 @@
+.dropdown {
+    @extend %relative;
+    z-index: 2;
+    @extend %width;
+    color: #000;
+    max-height: 215px;
+    overflow-x: hidden;
+    @extend %border-radius;
+    @extend %radius;
+    @extend %padding;
+
+    &__city {
+        @extend %flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--input-border-focus);
+        }
+    }
+}

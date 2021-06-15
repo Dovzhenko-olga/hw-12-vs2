@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&display=swap');
+
+body {
+    @include font-source-sans(14px, #2c3e50, 400);
+    min-height: 95vh;
+    @extend %flex;
+    @extend %center;
+    flex-direction: column;
+    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png');
+    .form-group {
+        max-width: 460px;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+li {
+    list-style-type: none;
+}

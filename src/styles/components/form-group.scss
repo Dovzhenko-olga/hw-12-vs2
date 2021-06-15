@@ -1,0 +1,6 @@
+.form-group {
+    @extend %relative;
+    @extend %flex;
+    @extend %border;
+    @extend %width;
+}

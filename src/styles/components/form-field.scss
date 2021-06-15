@@ -1,0 +1,21 @@
+.form-field {
+    @extend %border;
+    @extend %block;
+    @extend %padding;
+    @extend %width;
+    @include font-source-sans(14px, #525252, 400, 25px);
+    @extend %border-radius;
+    @extend %radius;
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+    &:focus {
+        outline: none;
+        border-color: var(--input-border-focus);
+    }
+    @extend %relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
